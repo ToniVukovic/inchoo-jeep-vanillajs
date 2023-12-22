@@ -1,0 +1,1037 @@
+:root {
+  --dark: #2f2f2f;
+  --light: #f5f5f5;
+  --green: #008421;
+  --orange: #e0872c;
+}
+
+@font-face {
+  font-family: "BebasNeue";
+  src: url("/fonts/Bebas_Neue/BebasNeue-Regular.ttf");
+}
+
+@font-face {
+  font-family: "TitilliumWebRegular";
+  src: url("/fonts/Titillium_Web/TitilliumWeb-Regular.ttf");
+}
+
+@font-face {
+  font-family: "TitilliumWebBold";
+  src: url("/fonts/Titillium_Web/TitilliumWeb-Bold.ttf");
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  font-size: inherit;
+  box-sizing: border-box;
+}
+
+main {
+  color: var(--dark);
+  margin-bottom: 24px;
+  @media (min-width: 768px) {
+    margin-bottom: 120px;
+  }
+}
+
+button {
+  cursor: pointer;
+  font-family: "BebasNeue";
+}
+
+.contact-promo {
+  background-color: var(--dark);
+  color: var(--light);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.contact-promo-content {
+  display: flex;
+  justify-content: space-between;
+  width: 1320px;
+  padding: 8px;
+  @media (min-width: 1024px) {
+    padding: 13px 12px 11px 12px;
+  }
+}
+
+.contact {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  @media (min-width: 1024px) {
+    gap: 20px;
+  }
+}
+
+.service {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.service p {
+  font-family: "TitilliumWebRegular";
+  font-size: 14px;
+  line-height: 24px;
+  display: none;
+  @media (min-width: 1024px) {
+    display: block;
+  }
+}
+
+.phone-wrap {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: var(--light);
+  text-decoration: none;
+}
+
+.phone-wrap .number {
+  font-family: "TitilliumWebBold";
+  font-size: 14px;
+  line-height: 24px;
+  display: none;
+  @media (min-width: 1024px) {
+    display: inline;
+  }
+}
+
+.contact-list {
+  position: relative;
+  font-family: "TitilliumWebBold";
+  font-size: 10px;
+  line-height: 16px;
+  display: flex;
+  gap: 15px;
+  align-items: center;
+  text-transform: uppercase;
+  text-decoration: none;
+  list-style: none;
+  @media (min-width: 1024px) {
+    font-size: 13px;
+    line-height: 16px;
+    gap: 25px;
+  }
+}
+
+.contact ul li a {
+  position: relative;
+}
+
+.contact ul li a::before {
+  content: url("/images/bullet.svg");
+  position: absolute;
+  top: 5.5%;
+  left: -17%;
+}
+
+.contact ul a {
+  color: var(--light);
+  text-decoration: underline 1px;
+  text-underline-offset: 1.5px;
+}
+
+.promo {
+  font-family: "TitilliumWebRegular";
+  font-size: 14px;
+  line-height: 24px;
+  display: none;
+  @media (min-width: 1440px) {
+    display: block;
+  }
+}
+
+.sign-in {
+  font-size: 16px;
+  line-height: 16px;
+  display: flex;
+  color: var(--light);
+  background-color: var(--dark);
+  border: none;
+  gap: 8px;
+  transition: all 0.2s;
+  @media (min-width: 1024px) {
+    font-size: 18px;
+    line-height: 24px;
+  }
+}
+
+.sign-in:hover {
+  color: #ffffff;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  @media (min-width: 768px) {
+    box-shadow: 0px 4px 24px 0px #00000029;
+  }
+}
+
+.nav-items {
+  width: 1320px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  padding: 20px 16px 19px 8px;
+  @media (min-width: 1024px) {
+    padding: 24px 8px 24px 12px;
+  }
+}
+
+.logo-nav-box {
+  display: flex;
+  @media (min-width: 1024px) {
+    gap: 80px;
+  }
+  @media (min-width: 1440px) {
+    gap: 117px;
+  }
+}
+
+.hamburger-logo-wrap {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+}
+
+.hamburger {
+  border: none;
+  background-color: transparent;
+  @media (min-width: 1024px) {
+    display: none;
+  }
+}
+
+.nav-logo-img {
+  width: 100%;
+  height: auto;
+  max-width: 99px;
+  @media (min-width: 768px) {
+    max-width: 154px;
+  }
+}
+
+.desktop-routes {
+  font-family: "BebasNeue";
+  font-size: 24px;
+  line-height: 1;
+  list-style: none;
+  gap: 71px;
+  display: none;
+  @media (min-width: 1024px) {
+    display: flex;
+  }
+}
+
+.logo-nav-box a {
+  color: var(--dark);
+  text-decoration: none;
+  position: relative;
+  font-size: 24px;
+  line-height: 1;
+  transition: all 0.2s;
+}
+
+.logo-nav-box ul a::before {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-weight: 200;
+  position: absolute;
+  left: -25%;
+  top: -20%;
+  content: "|";
+  font-size: 60px;
+  transform: rotate(15deg);
+}
+
+.logo-nav-box a:hover {
+  color: var(--orange);
+}
+
+.logo-nav-box a:hover + .logo-nav-box ul a::before {
+  color: var(--orange);
+}
+
+.search-cart-box {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  @media (min-width: 1024px) {
+    gap: 24px;
+  }
+}
+
+.search-mobile {
+  border: none;
+  height: 40px;
+  width: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--dark);
+}
+
+.search-store {
+  font-family: "TitilliumWebRegular";
+  font-size: 14px;
+  line-height: 24px;
+  background-image: url("/images/search.svg");
+  background-repeat: no-repeat;
+  background-position: 95% 50%;
+  height: 40px;
+  border: 2px solid var(--dark);
+  padding: 12px;
+  transition: all 0.2s;
+  @media (min-width: 1024px) {
+    height: 48px;
+    width: 358px;
+  }
+}
+
+.search-store:hover {
+  border: 2px solid #828282;
+}
+
+.cart-btn {
+  height: 40px;
+  width: 40px;
+  position: relative;
+  background-color: var(--green);
+  color: var(--light);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  transition: all 0.2s;
+  @media (min-width: 1024px) {
+    gap: 10px;
+    height: 48px;
+    width: auto;
+    padding: 14px 24px 10px 24px;
+  }
+}
+
+.cart-btn:hover {
+  background-color: #00aa2a;
+}
+
+.cart-amount {
+  font-family: "TitilliumWebBold";
+  font-size: 10px;
+  line-height: 16px;
+  position: absolute;
+  right: -1%;
+  top: -22%;
+  border-radius: 50%;
+  width: 16px;
+  height: 16px;
+  color: var(--green);
+  background-color: var(--light);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  @media (min-width: 1024px) {
+    font-size: 12px;
+    line-height: 16px;
+    width: 24px;
+    height: 24px;
+  }
+}
+
+.cart-content {
+  display: flex;
+  justify-content: center;
+}
+
+.cart-wrapper {
+  width: 1320px;
+}
+
+h1 {
+  font-family: "BebasNeue";
+  font-size: 22px;
+  line-height: 24px;
+  padding: 24px 0px 25px 8px;
+  @media (min-width: 768px) {
+    font-size: 72px;
+    line-height: 64px;
+    padding: 56px 16px 56px 16px;
+  }
+}
+
+.item-summary-flex {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column-reverse;
+  gap: 24px;
+  @media (min-width: 425px) {
+    flex-direction: column;
+  }
+  @media (min-width: 768px) {
+    gap: 56px;
+    margin: 0 8px;
+  }
+  @media (min-width: 1024px) {
+    flex-direction: row;
+  }
+}
+
+.items-wrapper {
+  min-width: 50%;
+  flex: 1;
+  @media (min-width: 1148px) {
+    margin-top: 45px;
+  }
+}
+
+.items-container {
+  border-top: 3px solid #f5f5f5;
+  border-bottom: 3px solid #f5f5f5;
+  margin: 0 8px;
+  @media (min-width: 1024px) {
+    margin: 0;
+  }
+}
+
+.cart-item {
+  padding: 26px 0 24px 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  @media (min-width: 768px) {
+    padding: 12px 0;
+    gap: 48px;
+  }
+}
+
+.image-specs {
+  display: flex;
+  gap: 16px;
+  @media (min-width: 768px) {
+    gap: 48px;
+  }
+}
+
+.cart-item-img-wrap {
+  position: relative;
+}
+
+.cart-item-img-label {
+  display: none;
+  font-family: "TitilliumWebBold";
+  @media (min-width: 1148px) {
+    display: block;
+    font-size: 14px;
+    line-height: 24px;
+    position: absolute;
+    top: -60px;
+  }
+}
+
+.cart-item-img {
+  width: 100%;
+  height: auto;
+  min-width: 144px;
+  @media (min-width: 768px) {
+    min-width: 294px;
+  }
+}
+
+.product-specs {
+  max-width: 294px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.product-description {
+  font-family: "BebasNeue";
+  font-size: 16px;
+  line-height: 16px;
+  @media (min-width: 768px) {
+    font-size: 18px;
+    line-height: 24px;
+  }
+}
+
+.product-color {
+  font-family: "TitilliumWebRegular";
+}
+
+.color-label {
+  font-family: "TitilliumWebBold";
+}
+
+.product-color,
+.color-label {
+  font-size: 12px;
+  line-height: 16px;
+  @media (min-width: 768px) {
+    font-size: 14px;
+    line-height: 24px;
+  }
+}
+
+.qty-total-edit {
+  align-self: flex-start;
+  display: flex;
+  flex: 1;
+  justify-content: space-between;
+  align-items: flex-start;
+  @media (min-width: 768px) {
+    padding: 0 0 12px 10px;
+    gap: 8px;
+  }
+}
+
+.total-edit-flex {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 32px;
+  @media (min-width: 425px) {
+    flex-direction: row;
+  }
+  @media (min-width: 1148px) {
+    margin-top: 10px;
+  }
+}
+
+.qty-wrap {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-self: flex-start;
+  gap: 16px;
+}
+
+.qty-label,
+.total-label {
+  font-family: "TitilliumWebBold";
+  font-size: 12px;
+  line-height: 16px;
+  @media (min-width: 1148px) {
+    font-size: 14px;
+    line-height: 24px;
+    position: absolute;
+    top: -60px;
+  }
+}
+
+.total-label {
+  @media (min-width: 1148px) {
+    top: -70px;
+  }
+}
+
+.qty {
+  align-self: flex-start;
+  height: 48px;
+  width: 48px;
+  border: 2px solid var(--dark);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  @media (min-width: 425px) {
+    align-self: center;
+  }
+}
+
+.qty-amount,
+.total {
+  font-size: 14px;
+  line-height: 24px;
+}
+
+.qty-amount {
+  font-family: "TitilliumWebRegular";
+  position: relative;
+  padding: 0 20px;
+}
+
+.total-wrap {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 32px;
+  @media (min-width: 425px) {
+    gap: 16px;
+  }
+}
+
+.total {
+  font-family: "TitilliumWebBold";
+}
+
+.items-container .cart-item:not(:last-child) {
+  border-bottom: 3px solid #f5f5f5;
+}
+
+.items-container .cart-item:not(:first-child) .cart-item-img-label,
+.items-container .cart-item:not(:first-child) .qty-label,
+.items-container .cart-item:not(:first-child) .total-label {
+  @media (min-width: 1148px) {
+    display: none;
+  }
+}
+
+.edit-remove-btns {
+  display: flex;
+  gap: 24px;
+  align-self: flex-end;
+  @media (min-width: 768px) {
+    gap: 16px;
+  }
+}
+
+.edit-remove-btns button {
+  border: none;
+  background-color: transparent;
+}
+
+.edit-remove-img {
+  max-width: 16px;
+}
+
+.discount-update-wrapper {
+  margin: 24px 8px 0 8px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  justify-content: space-between;
+  @media (min-width: 768px) {
+    margin-top: 45px;
+    margin-right: 0;
+  }
+  @media (min-width: 1024px) {
+    margin-right: 0;
+  }
+}
+
+.discount-box {
+  font-size: 0px;
+  border: 2px solid var(--dark);
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  @media (min-width: 425px) {
+    width: 294px;
+  }
+}
+
+.discount-box > * {
+  display: inline-block;
+  font-family: "TitilliumWebRegular";
+  font-size: 14px;
+  line-height: 24px;
+  border: none;
+}
+
+.discount-box input {
+  flex: 1;
+  padding: 8px;
+  @media (min-width: 425px) {
+  }
+}
+
+.discount-box button {
+  font-family: "BebasNeue";
+  padding: 13px 24px 11px 24px;
+  background-color: transparent;
+  border-left: 2px solid var(--dark);
+  font-size: 18px;
+  line-height: 24px;
+}
+
+.update-btn {
+  color: #f5f5f5;
+  background-color: var(--dark);
+  padding: 13px 20px 11px 20px;
+  font-size: 16px;
+  line-height: 16px;
+  width: 100%;
+  border: none;
+  transition: all 0.2s;
+  @media (min-width: 425px) {
+    width: 294px;
+  }
+  @media (min-width: 768px) {
+    font-size: 18px;
+    line-height: 24px;
+  }
+}
+
+.update-btn:hover {
+  background-color: #444444;
+}
+
+.summary-wrap {
+  width: 100%;
+  @media (min-width: 600px) {
+    width: 294px;
+    padding-left: 12px;
+  }
+}
+
+.summary-wrap h2 {
+  display: none;
+  font-family: "BebasNeue";
+  font-size: 40px;
+  line-height: 1;
+  margin-bottom: 16px;
+  @media (min-width: 768px) {
+    display: block;
+  }
+}
+
+.svg-icon {
+  width: 16px;
+  height: 16px;
+  fill: #2f2f2f;
+  transition: fill 0.3s ease, transform 0.3s ease;
+}
+
+.active,
+.accordion:hover {
+  color: var(--green);
+}
+
+.active .svg-icon {
+  fill: var(--green);
+  transform: rotate(45deg);
+}
+
+.estimate-wrap .acc-btn {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 18px;
+  line-height: 24px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  padding: 17px 24px 15px 24px;
+  font-family: "BebasNeue";
+  background-color: var(--light);
+  transition: all 0.2s;
+  border-bottom: 1px solid;
+  border-image: linear-gradient(
+      to right,
+      var(--light) 5%,
+      #ffffff 5%,
+      #ffffff 95%,
+      var(--light) 95%
+    )
+    1;
+  @media (min-width: 1024px) {
+    border-bottom: 1px solid;
+    border-image: linear-gradient(to right, #ffffff 0%, #ffffff 100%) 1;
+  }
+}
+
+.acc-btn:hover svg path {
+  fill: var(--green);
+}
+
+.panel {
+  padding: 24px 8px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  @media (min-width: 768px) {
+    padding: 24px 0;
+  }
+}
+
+.estimate-wrap form label {
+  font-family: "TitilliumWebBold";
+  font-size: 14px;
+  line-height: 24px;
+  width: 100%;
+}
+
+.estimate-wrap form input[type="text"],
+select {
+  padding: 12px 0 12px 16px;
+  border: 2px solid #828282;
+}
+
+.margin {
+  margin-bottom: 20px;
+}
+
+.radio-box {
+  display: flex;
+  gap: 14px;
+  align-items: center;
+  margin-left: 16px;
+}
+
+.radio-box input {
+  height: 16px;
+  width: 16px;
+  accent-color: var(--dark);
+}
+
+.radio-box p {
+  font-family: "TitilliumWebBold";
+  font-size: 14px;
+  line-height: 24px;
+}
+
+.fiver {
+  color: #828282;
+  font-size: 12px;
+  line-height: 16px;
+}
+
+.summary-amounts {
+  background-color: var(--light);
+  padding-top: 8px;
+}
+
+.sub-ship {
+  font-family: "BebasNeue";
+  font-size: 16px;
+  line-height: 16px;
+  @media (min-width: 1024px) {
+    font-size: 18px;
+    line-height: 24px;
+  }
+}
+
+.sub-ship-amount {
+  font-family: "TitilliumWebRegular";
+  font-size: 14px;
+  line-height: 24px;
+}
+
+.flat-rate {
+  font-family: "TitilliumWebRegular";
+  font-size: 14px;
+  line-height: 24px;
+}
+
+.subtotal,
+.shipping,
+.final-amount {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.subtotal,
+.shipping {
+  padding: 8px 24px 0px 24px;
+}
+
+.shipping {
+  padding-bottom: 16px;
+}
+
+.final-amount {
+  padding: 16px 24px 8px 24px;
+  border-top: 1px solid;
+  border-image: linear-gradient(
+      to right,
+      var(--light) 5%,
+      #ffffff 5%,
+      #ffffff 95%,
+      var(--light) 95%
+    )
+    1;
+  @media (min-width: 1024px) {
+    padding: 16px 24px 32px 24px;
+    border-top: 1px solid;
+    border-image: linear-gradient(to right, #ffffff 0%, #ffffff 100%) 1;
+  }
+}
+
+.final-label {
+  font-family: "BebasNeue";
+  font-size: 18px;
+  line-height: 24px;
+  @media (min-width: 1024px) {
+    font-size: 24px;
+    line-height: 24px;
+  }
+}
+
+.final-number {
+  font-family: "TitilliumWebBold";
+  font-size: 14px;
+  line-height: 16px;
+  @media (min-width: 1024px) {
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
+
+.checkout-btn-wrap {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 8px 16px;
+  background-color: var(--light);
+}
+
+.checkout-btn {
+  padding: 18px 0 14px 0;
+  background-color: var(--green);
+  color: var(--light);
+  width: 100%;
+  border: none;
+  font-family: "BebasNeue";
+  font-size: 24px;
+  line-height: 1;
+  transition: all 0.2s;
+}
+
+.checkout-btn:hover {
+  background-color: #00aa2a;
+}
+
+.multiple-ad {
+  text-decoration: underline 1px var(--dark);
+  text-underline-offset: 0.5px;
+  color: var(--dark);
+  font-family: "TitilliumWebBold";
+  font-size: 13px;
+  line-height: 16px;
+  margin: 24px 0;
+}
+
+footer {
+  background-color: var(--dark);
+  color: var(--light);
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.footer-content {
+  padding: 24px 28px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 24px;
+  @media (min-width: 768px) {
+    padding: 50px 0 28px 0;
+    gap: 37px;
+  }
+}
+
+.no-desktop {
+  @media (min-width: 768px) {
+    display: none;
+  }
+}
+
+.footer-content ul {
+  font-family: "TitilliumWebBold";
+  font-size: 11px;
+  line-height: 16px;
+  text-transform: uppercase;
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 24px;
+  @media (min-width: 768px) {
+    font-size: 13px;
+    line-height: 16px;
+    gap: 15px;
+  }
+}
+
+.footer-content ul li {
+  width: 100%;
+  text-align: center;
+  @media (min-width: 768px) {
+    width: auto;
+  }
+}
+
+.slash-divider {
+  font-weight: 100;
+  display: none;
+  font-size: 25px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  @media (min-width: 1024px) {
+    display: inline;
+  }
+}
+
+.copyright {
+  font-family: "TitilliumWebRegular";
+  font-size: 12px;
+  line-height: 16px;
+}
+
+.footer-content ul a {
+  color: var(--light);
+  text-decoration: underline 1px;
+  text-underline-offset: 1.5px;
+}
+
+.customer-service-cta {
+  font-family: "TitilliumWebRegular";
+  font-size: 14px;
+  line-height: 24px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 11px;
+}
+
+.phone-box {
+  font-family: "TitilliumWebBold";
+  font-size: 12px;
+  line-height: 16px;
+  color: var(--light);
+  text-decoration: none;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  @media (min-width: 768px) {
+    gap: 11px;
+    font-size: 14px;
+    line-height: 24px;
+  }
+}
+
+.hide-desktop {
+  @media (min-width: 1024px) {
+    display: none;
+  }
+}
+
+.show-desktop {
+  display: none;
+  @media (min-width: 1024px) {
+    display: block;
+  }
+}
